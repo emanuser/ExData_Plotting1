@@ -1,3 +1,4 @@
+
 # original source "https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption"
 
 
@@ -28,10 +29,12 @@ if(!exists("Data_date.time")) {
 
 
 ## saves plot to  png file
+par(bg = NA) 
 png(filename="plot2.png", width = 480, height = 480) 
 plot(Data_date.time$date_time, Data_date.time$Global_active_power, 
      type="l", 
      xlab = "", 
      ylab ="Global Active Power (kilowatts)")
+
 dev.off() 
 
