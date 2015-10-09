@@ -15,6 +15,7 @@ if(!exists("Data_date.time")) {
   date_time <- strptime(paste(selected.Dates$Date, selected.Dates$Time),"%Y-%m-%d %H:%M:%S")
   
   # Create new data frame with date_time column
+  par(bg = NA) 
   Data_date.time <<- data.frame(date_time, selected.Dates)
   for(i in 4:10){
     Data_date.time[, i] <- as.numeric(Data_date.time[, i])

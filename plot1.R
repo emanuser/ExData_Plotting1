@@ -26,6 +26,7 @@ if(!exists("Data_date.time")) {
 
 ## saves histogram to png file
 png(filename="plot1.png", width = 480, height = 480) 
+par(bg = NA) 
 hist(Data_date.time$Global_active_power,
      col = "red",
      xlab = "Global Active Power (kilowatts)",
