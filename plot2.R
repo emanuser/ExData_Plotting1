@@ -15,8 +15,7 @@ if(!exists("Data_date.time")) {
   selected.Dates$Date<- as.Date(selected.Dates$Date, "%d/%m/%Y") 
   date_time <- strptime(paste(selected.Dates$Date, selected.Dates$Time),"%Y-%m-%d %H:%M:%S")
   
-  # Create new data frame with date_time column
-  par(bg = NA) 
+  # Create new data frame with date_time column 
   Data_date.time <<- data.frame(date_time, selected.Dates)
   for(i in 4:10){
     Data_date.time[, i] <- as.numeric(Data_date.time[, i])
@@ -29,8 +28,8 @@ if(!exists("Data_date.time")) {
 
 
 ## saves plot to  png file
-par(bg = NA) 
 png(filename="plot2.png", width = 480, height = 480) 
+par(bg = NA) 
 plot(Data_date.time$date_time, Data_date.time$Global_active_power, 
      type="l", 
      xlab = "", 
