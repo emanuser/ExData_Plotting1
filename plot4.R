@@ -26,7 +26,7 @@ if(!exists("Data_date.time")) {
 
 ## saves plot to  png file
 png(filename="plot4.png", width = 480, height = 480) 
-par(mfrow = c(2,2), bg = NA)
+par(mfrow = c(2,2), bg = NA) 
 
 plot(Data_date.time$date_time, Data_date.time$Global_active_power, 
      type="l",

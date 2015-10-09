@@ -25,7 +25,7 @@ if(!exists("Data_date.time")) {
 
 ## saves plot to  png file
 png(filename="plot3.png", width = 480, height = 480) 
-par(bg = NA) 
+par(bg = NA)  
 plot(Data_date.time$date_time, Data_date.time$Sub_metering_1, 
      type="l", 
      xlab = "", 
