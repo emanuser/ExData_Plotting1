@@ -41,3 +41,4 @@ legend("topright",
        col = c("black", "red", "blue"), 
        lty = "solid") 
 dev.off() 
+
