@@ -37,3 +37,4 @@ plot(Data_date.time$date_time, Data_date.time$Global_active_power,
 
 dev.off() 
 
+ 
