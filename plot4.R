@@ -31,7 +31,7 @@ par(mfrow = c(2,2), bg = NA)
 plot(Data_date.time$date_time, Data_date.time$Global_active_power, 
      type="l",
      xlab = "", 
-     ylab ="Global Active Power (kilowatts)")
+     ylab ="Global Active Power")
 
 plot(Data_date.time$date_time, Data_date.time$Voltage,
      type="l",
@@ -64,5 +64,4 @@ plot(Data_date.time$date_time,
 
 # Close conection to png
 dev.off() 
-
 
