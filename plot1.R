@@ -22,7 +22,7 @@ if(!exists("Data_date.time")) {
   rm(new_data, Dates_1, Dates_2, date_time, selected.Dates, i)
 }
 
-
+ 
 
 ## saves histogram to png file
 png(filename="plot1.png", width = 480, height = 480) 
